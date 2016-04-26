@@ -91,6 +91,7 @@ Translations of the guide are available in the following languages:
 * [Regular Expressions](#regular-expressions)
 * [Percent Literals](#percent-literals)
 * [Metaprogramming](#metaprogramming)
+* [Testing](#testing)
 * [Misc](#misc)
 * [Tools](#tools)
 

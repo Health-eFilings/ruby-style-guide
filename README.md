@@ -3806,6 +3806,10 @@ resource cleanup when possible.
   testing is simple enough.
 <sup>[[link](#struct-fixtures)]</sup>
 
+* <a name="fixture-names"></a>
+  Fixtures should have meaningful names (e.g. `colonoscopy` instead of `procedure1`).
+<sup>[[link](#fixture-names)]</sup>
+
 
 ## Misc
 

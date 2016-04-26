@@ -3784,6 +3784,24 @@ resource cleanup when possible.
   u2.__send__ ...
   ```
 
+## Testing
+
+* <a name="reasonable-fixtures"></a>
+  Treat fixtures as though they were
+  code: if they will be used in multiple tests then "refactor" them into a fixture;
+  if they will only be used once then consider just including it in line.
+<sup>[[link](#reasonable-fixtures)]</sup>
+
+* <a name="five-fixtures"></a>
+  Models should have fewer than five fixtures.
+<sup>[[link](#five-fixtures)]</sup>
+
+* <a name="struct-fixtures"></a>
+  Prefer using `Struct` or `OpenStruct` instead of fixtures if the method you are
+  testing is simple enough.
+<sup>[[link](#struct-fixtures)]</sup>
+
+
 ## Misc
 
 * <a name="always-warn"></a>

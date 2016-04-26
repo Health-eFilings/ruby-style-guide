@@ -3787,6 +3787,10 @@ resource cleanup when possible.
 
 ## Testing
 
+* <a name="fixtures-over-factories"></a>
+  Use fixtures instead of factories.
+<sup>[[link](#fixtures-over-factories)]</sup>
+
 * <a name="reasonable-fixtures"></a>
   Treat fixtures as though they were
   code: if they will be used in multiple tests then "refactor" them into a fixture;

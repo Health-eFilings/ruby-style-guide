@@ -3792,24 +3792,30 @@ resource cleanup when possible.
 <sup>[[link](#fixtures-over-factories)]</sup>
 
 * <a name="reasonable-fixtures"></a>
-  Treat fixtures as though they were
-  code: if they will be used in multiple tests then "refactor" them into a fixture;
-  if they will only be used once then consider just including it in line.
+  Treat fixtures as though they were code: if they will be used in multiple tests
+  then "refactor" them into a fixture; if they will only be used once then
+  consider just creating the model in the test case.
 <sup>[[link](#reasonable-fixtures)]</sup>
 
-* <a name="five-fixtures"></a>
-  Models should have fewer than five fixtures.
-<sup>[[link](#five-fixtures)]</sup>
+* <a name="minimal-fixtures"></a>
+  Models should have the minimal reasonable number of fixtures.
+  For most models, this should be in the 3-5 range.
+<sup>[[link](#minimal-fixtures)]</sup>
+
+* <a name="modify-not-duplicate"></a>
+  If you're considering creating another fixture, especially if your first step is
+  copy-and-pasting an existing one, consider whether you could modify the existing
+  fixture in your test case instead.
+<sup>[[link](#modify-not-duplicate)]</sup>
 
 * <a name="struct-fixtures"></a>
-  Prefer using `Struct` or `OpenStruct` instead of fixtures if the method you are
+  Prefer using `OpenStruct` instead of fixtures if the method you are
   testing is simple enough.
 <sup>[[link](#struct-fixtures)]</sup>
 
 * <a name="fixture-names"></a>
   Fixtures should have meaningful names (e.g. `colonoscopy` instead of `procedure1`).
 <sup>[[link](#fixture-names)]</sup>
-
 
 ## Misc
 

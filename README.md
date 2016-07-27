@@ -1934,7 +1934,19 @@ no parameters.
   # good
   array.reverse_each { ... }
   ```
+  
+* <a name="implicit-type"> </a>
+  Use explicit Boolean methods instead of implicit typecasting, particularly
+  when checking if something is present.
+<sup>[[link](#implicit-type)]</sup>
 
+  ```Ruby
+  # bad
+  return if foo
+
+  # good
+  return if foo.present?
+  ```
 ## Naming
 
 > The only real difficulties in programming are cache invalidation and

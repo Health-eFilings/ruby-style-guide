@@ -3798,6 +3798,23 @@ resource cleanup when possible.
   u2.__send__ ...
   ```
 
+* <a name="prefer-memoize"></a>
+  Prefer `memoize` over caching variables as it is more clear
+<sup>[[link](#prefer-memoize)]</sup>
+
+  ```ruby
+  # BAD
+  def expensive_method
+      @variable ||= expensive_calculation
+  end
+
+  # GOOD
+  def expensive_method
+      expensive_calculation
+  end
+  memoize :expensive_method
+  ```
+
 ## Testing
 
 * <a name="fixtures-over-factories"></a>
